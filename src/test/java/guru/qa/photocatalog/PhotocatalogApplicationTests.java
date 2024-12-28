@@ -6,15 +6,4 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class PhotocatalogApplicationTests {
 
-	public String abc(String a) {
-		System.out.println("a");
-		return "";
-	}
-
-	@Test
-	void contextLoads() {
-		abc(abc("a"));
-
-	}
-
 }

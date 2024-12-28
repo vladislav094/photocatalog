@@ -34,4 +34,8 @@ public class PhotoController {
     public Photo byId(@PathVariable("id") String id) {
         return photoService.byId(id);
     }
+
+    public static void myCall() {
+        System.out.println("Now execute myCall() method!");
+    }
 }

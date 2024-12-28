@@ -1,6 +1,6 @@
 package guru.qa.photocatalog.ex;
 
-public class PhotoNotFoundException extends RuntimeException{
+public class PhotoNotFoundException extends RuntimeException {
 
     public PhotoNotFoundException() {
     }
