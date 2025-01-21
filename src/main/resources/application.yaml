@@ -7,6 +7,9 @@ api:
 spring:
   application:
     name: photocatalog
+  graphql:
+    graphiql:
+      enabled: true
   datasource:
     url: 'jdbc:postgresql://localhost:5432/photocatalog'
     username: postgres

@@ -8,8 +8,3 @@ create table if not exists "photos"
     content          bytea
 
 );
-
--- INSERT INTO photos (description, last_modify_data)
--- VALUES ('Argentina', 'AR'),
---        ('Bolivia', 'BO'),
---        ('Peru', 'PE')
