@@ -1,6 +1,7 @@
 package guru.qa.photocatalog.domain;
 
 import guru.qa.photocatalog.data.PhotoEntity;
+import guru.qa.photocatalog.domain.graphql.PhotoGql;
 
 import java.util.Date;
 
@@ -13,5 +14,12 @@ public record Photo(String description,
                 pe.getDescription(),
                 pe.getLastModifyDate(),
                 "");
+    }
+
+    public static Photo fromGqlPhoto(PhotoGql photoGql) {
+        return new Photo(
+                photoGql.description(),
+                photoGql.lastModifyDate(),
+                photoGql.content() != null ? photoGql.content() : "");
     }
 }
