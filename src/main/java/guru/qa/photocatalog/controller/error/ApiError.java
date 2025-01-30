@@ -60,10 +60,6 @@ public class ApiError {
     private record Error(String code, String message, List<ErrorItem> errors) {
     }
 
-    ;
-
     private record ErrorItem(String code, String reason, String message) {
     }
-
-    ;
 }

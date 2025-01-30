@@ -12,6 +12,8 @@ public interface PhotoService {
 
     List<Photo> allPhotos();
 
+    List<PhotoGql> allGqlPhotos();
+
     Photo photoByDescription(String description);
 
     Photo photoById(String id);

@@ -50,6 +50,16 @@ public class DbPhotoService implements PhotoService {
                 ));
     }
 
+    @Override
+    public List<PhotoGql> allGqlPhotos() {
+        return photoRepository.findAll().stream()
+                .map(fe -> new PhotoGql(
+                        fe.getId(),
+                        fe.getDescription(),
+                        fe.getLastModifyDate(),
+                        fe.getContent() != null ? new String(fe.getContent()) : ""
+                )).toList();
+    }
 
     @Override
     public Photo photoByDescription(String description) {
